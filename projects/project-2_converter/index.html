@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="javascript/react">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foot to meter Converter</title>
+    <style>
+        body{
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .container{
+            display: flex;
+            width: 700px;
+            height: 160px;
+            margin: auto;
+            justify-content: center;
+            flex-direction: row;
+            gap: 60px;
+            position: relative;
+            background-color: rgb(175, 212, 245);
+            margin-top: 70px;
+            flex-wrap: wrap;
+            
+        }
+        .container__inputs{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            text-align: center;
+        }
+        .equal{
+            position: absolute;
+            top: 53px;
+           
+        }
+        .container__inputs input{
+            padding: 15px 20px;
+            text-align: center;
+            border: 1px solid transparent;
+            outline: none;
+            line-height: 18px;
+            font-size: 18px;
+            border-radius: 100px;
+
+        }
+        .container__inputs label{
+            font-size: 22px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container"> 
+        <div class="container__inputs"  >
+
+            <label for="foot"> Foot</label>
+            <input type="number" id="foot" value="1">
+        </div> 
+        <div class="equal">
+            <h1>=</h1>
+        </div>
+        <div  class="container__inputs" >
+
+            <label for="meter">Meter</label>
+            <input type="number" id="meter" value="0.3048">
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
