@@ -50,3 +50,24 @@ const object3 = {
 // console.log(Object.values(tinderUser))
 // console.log(Object.entries(tinderUser)) 
 
+
+
+//  imp topic || Object destructuring
+
+//  is ka faida ye hua k hamri jan chot gai dot notation se or lamba lamba name likhen se 
+
+const course = {
+
+    coruseCode : "ce-230",
+    courseName : "Programming Fundamentals",
+    courseInstructor : "Dr Muhammad Ghazanfar"
+}
+
+const {coruseCode:ccd , courseName: cnm , courseInstructor: cin } = course
+
+console.log(ccd)
+console.log(cnm)
+console.log(cin)
+
+
+// next topic API ad json 
