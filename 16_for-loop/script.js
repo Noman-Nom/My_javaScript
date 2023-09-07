@@ -26,8 +26,27 @@
 // }
 
 
-// 
+// loop with in the loop
+// for (let i = 1; i <= 5; i++) {
+//   console.log(`outer loop ${i}`)
+//   for (let j = 1; j <= 5; j++) {
+//    console.log(`inner loop ${j} and outer loop ${i}`)
+    
+//   }
+    
+// }
 
 
+//   print the table of number 1 - 10
+
+for (let i = 1; i <=10; i++) {
+    console.log(`Table of ${i}`)
+
+    for (let j = 1; j <=10; j++){
+        console.log(`${i} * ${j} = ${i*j}`)
+      
+    }
+    
+}
 
 
