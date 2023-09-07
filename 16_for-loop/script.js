@@ -37,16 +37,44 @@
 // }
 
 
+
+// ................usefull program...........
+
 //   print the table of number 1 - 10
 
-for (let i = 1; i <=10; i++) {
-    console.log(`Table of ${i}`)
+// for (let i = 1; i <=10; i++) {
+//     console.log(`Table of ${i}`)
 
-    for (let j = 1; j <=10; j++){
-        console.log(`${i} * ${j} = ${i*j}`)
+//     for (let j = 1; j <=10; j++){
+//         console.log(`${i} * ${j} = ${i*j}`)
       
+//     }
+    
+// }
+
+
+
+//  break and continue in loops
+console.log('break in loops')
+for (let i = 0; i <=10; i++) {
+    const element = i;
+    if (element===6) {
+        console.log("6 is detected")
+        break
+        
     }
+    console.log( element)
     
 }
 
-
+console.log('continue in lops')
+for (let i = 0; i <=10; i++) {
+    const element = i;
+    if (element===6) {
+        console.log("6 is detected")
+        continue
+        
+    }
+    console.log( element)
+    
+}
