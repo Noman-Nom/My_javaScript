@@ -7,10 +7,41 @@
 </head>
 <body>
     
+    <ul class="ulist">
+        <li>pakistan</li>
+    </ul>
 
 
-    <script>
-        
-    </script>
 </body>
+    <script>
+                const addLang = (langName)=>{
+                        const li = document.createElement('li')
+                        li.innerHTML= `${langName}`
+                        document.querySelector('.ulist').appendChild(li)
+                }
+
+                addLang("cpp")
+                addLang("c#")
+
+                // more optimize method 
+
+                const addProgLanguage =(langName)=>{
+                    const li = document.createElement('li')
+                    const addText = document.createTextNode(langName)
+                    li.appendChild(addText)
+
+                    document.querySelector('.ulist').appendChild(li)
+
+
+
+                }
+                addProgLanguage("javascript")
+                addProgLanguage("javascript")
+
+                // edit 
+
+                 const lang2 =document.querySelector('li:nth-child(2)')
+                 lang2.style.color = 'red'
+                 lang2.innerHTML = 'ruby'
+    </script>
 </html>
