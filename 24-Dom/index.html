@@ -9,7 +9,31 @@
     
 </body>
 <script>
+    const div = document.createElement('div')
+    div.className= "main"
+    div.id= Math.round(Math.random() * 10 + 1 )
+    div.setAttribute("title", "Hello World")
+    div.style.backgroundColor= "red"
+
+    // yahan tak jo bhi code hum ne kia he us se create hua  he or mem men save hua he par wo abhi tk display nahi hua he 
+    // ----------for display --------
+
+    // div.innerText ="Hello Noman"
+    //  this is not good approach 
+
+    const addText = document.createTextNode("Hello Noman")
+    div.appendChild(addText)
+    document.body.appendChild(div)
+
+
+    //  ye method useful he or optimize he 
+
+
     
+
+
+    console.log(div)
+
 </script>
 
 </html>
