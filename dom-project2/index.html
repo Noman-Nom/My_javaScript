@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+  
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>BMI CALCULATOR</title>
 </head>
@@ -17,21 +18,25 @@
                         <div class="input-field">
                             
                             <i class="fa fa-bandcamp" aria-hidden="true"></i>
-                            <input type="number" placeholder="enter your weight">
+                            <input type="number" 
+                            id="weight"
+                            placeholder="enter your weight in KG">
 
                         </div>
                         <div class="input-field">
                             <i class="fa fa-text-height" aria-hidden="true"></i>
-                            <input type="number" placeholder="enter your height">
+                            <input type="number" 
+                            id="height"
+                            placeholder="enter your height in CM">
 
                         </div>
                         <div class="input-field">
                             <i class="fa fa-registered" aria-hidden="true"></i>
-                            <input type="number" readonly placeholder="your BMI">
+                            <div id="result"></div>
 
                         </div>
                         <div class="btn-field">
-                            <button type="button">
+                            <button type="submit">
                               Calculate
                             </button>
 
@@ -45,5 +50,7 @@
     </div>
     
     <script src="script.js"></script>
+   
+
 </body>
 </html>
