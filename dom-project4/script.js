@@ -3,15 +3,28 @@ const addTask = document.querySelector("#addTask")
 const tasks = document.querySelector("#tasks")
 
 
+const todoTask = ()=>{
+    const li = document.createElement("li")
+    li.innerHTML=`${inputBox.value} <button class="delete" id="deleteBtn">Delete</button>`
+    tasks.appendChild(li)
+    inputBox.value=""
+    const deleteBtn = document.querySelector('#deleteBtn')
+    deleteBtn.addEventListener('click',(e)=>{
+        // console.log(e.target.parentElement)
+        removeIt = e.target.parentElement
+        removeIt.remove()
+    })
+}
+
+
+
+
 addTask.addEventListener("click", ()=>{
     if(inputBox.value===""){
         alert("please add some task")
     }
     else{
-        const li = document.createElement("li")
-        li.innerHTML=`${inputBox.value} <button class="delete" id="deleteBtn">Delete</button>`
-        tasks.appendChild(li)
-        inputBox.value=""
+        todoTask()
     }
     console.log(inputBox.value)
     
@@ -23,10 +36,8 @@ if(e.key==="Enter"){
         alert("please add some task")
     }
     else{
-        const li = document.createElement("li")
-        li.innerHTML=`${inputBox.value} <button class="delete" id="deleteBtn">Delete</button>`
-        tasks.appendChild(li)
-        inputBox.value=""
+       todoTask()
+     
     }
     
 }
