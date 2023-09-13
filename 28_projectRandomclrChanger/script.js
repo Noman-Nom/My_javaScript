@@ -8,24 +8,26 @@ const randomColor=()=>{
     for(i=0; i<6 ;i ++ ){
             color +=Math.floor(Math.random()*9)
     }
-    // console.log(color)
+    console.log(color)
     return color
-  
 
 }
+randomColor()
 
+let intervelId;
 
-const  startChangingColor=()=>{
-setInterval(bgChanger,1000)
-    const bgChanger =()=>{
-        body.style.backgroundColor= randomColor()
-    } 
+const bgChanger=()=>{
+    body.style.backgroundColor = randomColor()
 }
 
-
-const stopChangingColor = ()=>{
-
+const  startChangingColor = ()=>{
+    intervelId= setInterval(bgChanger,1200)
+    
 }
+ const stopChangingColor = ()=>{
+        clearInterval(intervelId)
+ }
+
 document.querySelector("#start").addEventListener('click', startChangingColor)
 document.querySelector("#stop").addEventListener('click', stopChangingColor)
 
