@@ -8,7 +8,7 @@ window.addEventListener('keydown',(e)=>{
       cellpadding="10px"
       cellspacing="10"
       margin="center center">
-    <tr bgcolor="skyblue">
+    <tr border="5px" bgcolor="skyblue">
       <th>Key</th>
       <th>KeyCode</th>
       <th>Code</th>
