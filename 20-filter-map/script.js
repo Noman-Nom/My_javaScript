@@ -1,11 +1,12 @@
 const languages = ["cpp" , "c#", "java" , "javascript" , "python"]
 
-const data = languages.forEach((item)=>{
-    // console.log(item)
-    return item
+// const data = languages.forEach((item)=>{
+//     // console.log(item)
+//     return item
 
-})
-// console.log(data)
+// })
+
+
 
 // for each loop kabhi bhi return nahi karta he 
 
@@ -26,11 +27,22 @@ const values = myNums.filter((num)=>{
 
 
 const newNums = []
+// myNums.forEach((num)=>{
+//         if(num>4){
+//             newNums.push(num)
+//         }
+// }) 
+
 myNums.forEach((num)=>{
-        if(num>4){
-            newNums.push(num)
-        }
-}) 
+    if(num>4){
+        newNums.push(num)
+    }
+
+})
+// console.log(newNums)
+
+
+
 
 // console.log(newNums)
 
@@ -59,5 +71,5 @@ const books = [
   {
       return bk.publish>=1987 && bk.genre === 'Science'  && bk.edition >= 2016
 } )
-console.log(userBooks)
+// console.log(userBooks)
 
