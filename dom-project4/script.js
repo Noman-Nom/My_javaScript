@@ -10,9 +10,10 @@ const todoTask = ()=>{
     inputBox.value=""
     const deleteBtn = document.querySelector('#deleteBtn')
     deleteBtn.addEventListener('click',(e)=>{
-        // console.log(e.target.parentElement)
-        removeIt = e.target.parentElement
+        console.log(e.target.parentNode)
+        removeIt = e.target.parentNode
         removeIt.remove()
+    
     })
 }
 
