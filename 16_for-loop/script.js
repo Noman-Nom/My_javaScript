@@ -9,11 +9,11 @@
 // for loop  with if
 
 // for (let i = 0; i <= 10; i++) {
-
+    
+//     const element = i;
 //     if(i===5){
 //         console.log("3 is my fvt number")
 //     }
-//     const element = i;
 
 //     if (element === 9) {
 //         console.log("9 is also my fvt number")
@@ -55,26 +55,26 @@
 
 
 //  break and continue in loops
-console.log('break in loops')
-for (let i = 0; i <=10; i++) {
-    const element = i;
-    if (element===6) {
-        console.log("6 is detected")
-        break
+// console.log('break in loops')
+// for (let i = 0; i <=10; i++) {
+//     const element = i;
+//     if (element===6) {
+//         console.log("6 is detected")
+//         break
         
-    }
-    console.log( element)
+//     }
+//     console.log( element)
     
-}
+// }
 
-console.log('continue in lops')
-for (let i = 0; i <=10; i++) {
-    const element = i;
-    if (element===6) {
-        console.log("6 is detected")
-        continue
+// console.log('continue in lops')
+// for (let i = 0; i <=10; i++) {
+//     const element = i;
+//     if (element===6) {
+//         console.log("6 is detected")
+//         continue
         
-    }
-    console.log( element)
+//     }
+//     console.log( element)
     
-}
+// }
