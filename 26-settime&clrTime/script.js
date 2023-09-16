@@ -29,3 +29,22 @@ const sayHi = setTimeout(()=>{
     clearTimeout(sayHi)
     console.log("Stop")
  })
+// ............... extra work ..............
+
+// const start = document.querySelector('#start')
+// const stop = document.querySelector('#stop')
+// const container = document.querySelector(".container")
+// let msg;
+
+// const changeName = ()=>{
+//     container.innerHTML="Hello Raza...."
+// }
+
+// start.addEventListener('click',()=>{
+//  msg= setTimeout(changeName,2000)
+// })
+
+// stop.addEventListener("click",()=>{
+//     clearTimeout(msg)
+
+// })
