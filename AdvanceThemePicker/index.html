@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="javascript/react">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theme Picker</title>
+    <style>
+        .container{
+            width: 100%;
+            height:calc(100vh-50px);
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20%;
+        }
+        #code{
+            display: flex;
+            flex-direction: row;
+            position: absolute;
+            top: 0;
+        }
+        button{
+            padding: 12px 7px;
+            background-color: rgb(79, 76, 76);
+            color: white;
+            width: 100px;
+            border-top-right-radius: 50px;
+            border-bottom-left-radius: 50px;
+            font-size: 18px;
+        
+           
+        }
+      
+    </style>
+</head>
+<body>
+    
+
+    <div class="container">
+            <div id="code">
+             <h3>ColorCode:</h3>
+            <p id="colorCode"></p>
+
+            </div>
+
+        <button id="start">Start</button>
+        <button id="start">Stop</button>
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
