@@ -54,5 +54,33 @@ const prom3 = new Promise((resolve,reject)=>{
 })
 
 prom3.then((user)=>{
+        // console.log(user)
+})
+
+const promise4 = new Promise((resolve,reject)=>{
+    setTimeout(()=>{
+        let error = false
+        // let error = true
+        if(!error){
+            resolve({userName:"noman",pass:123})
+        }else{
+            reject("Error: something went wrong")
+        }
+    },1000)
+   
+
+})
+
+promise4.then((user)=>{
         console.log(user)
+        return user.userName
+})
+.then((userName)=>{
+        console.log(userName)
+})
+.catch((error)=>{
+console.log(error)
+})
+.finally(()=>{
+    console.log("The promise is either resolved or rejected")
 })
