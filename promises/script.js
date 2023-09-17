@@ -43,6 +43,16 @@ new Promise((resolve,reject)=>{
 })
 
 
-// promise 3 
+// promise 3 handling with data 
 
-const prom3 = new Promise
+const prom3 = new Promise((resolve,reject)=>{
+    setTimeout(()=>{
+            resolve({user:"M.Noman", UserEmail:"noman5456318@gmail.com"})
+          
+    },1000)
+
+})
+
+prom3.then((user)=>{
+        console.log(user)
+})
