@@ -72,15 +72,47 @@ const promise4 = new Promise((resolve,reject)=>{
 })
 
 promise4.then((user)=>{
-        console.log(user)
+        // console.log(user)
         return user.userName
 })
 .then((userName)=>{
-        console.log(userName)
+        // console.log(userName)
 })
 .catch((error)=>{
-console.log(error)
+// console.log(error)
 })
 .finally(()=>{
-    console.log("The promise is either resolved or rejected")
+    // console.log("The promise is either resolved or rejected")
 })
+
+//  promise 5 
+
+const promise5 = new Promise((resolve,reject)=>{
+setTimeout(()=>{
+    // let error = false
+    let error = true
+    if(!error){
+        resolve({language:"javascript",pass:123})
+    }else{
+        reject("Error: something went wrong")
+    }
+},1000)
+})
+
+async function consumePromiseFive(){
+    try {
+        const response = await promise5
+        console.log(response)
+        
+    } catch (error) {
+        console.log(error)
+        
+    }
+}
+
+// without try and cathc
+// async function consumePromiseFive(){
+//     const response = await promise5
+//     console.log(response)
+// }
+consumePromiseFive()
