@@ -12,7 +12,6 @@ const showMoreBtn = document.querySelector("#show-more-btn")
 // console.log(searchResults)
 let inputData = ""
 let page = 1;
-// let perPage=10;
 
 async function searchImages(){
 
@@ -79,5 +78,6 @@ form.addEventListener('submit',(e)=>{
       
         
         searchImages()
+        console.log("click")
         
 })
