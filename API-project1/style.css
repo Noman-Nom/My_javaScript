@@ -56,23 +56,22 @@ button{
 
 }
 .search-results{
-    max-width: 1000px;
-    margin: auto;
-    padding-left: 25px;
-    padding-right: 25px;
+   
+    
+   display: flex;
+   justify-content: space-between;
+
 
 }
-.search-result{
-    display: flex;
-    flex-wrap: wrap;
 
-    align-items: center;
-    justify-content: space-around;
-}
 
 .col {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+
     flex-basis: 25%;
-    min-width: 270px;
+    /* min-width: 270px; */
     padding: 10px;
     margin-bottom: 50px;
     transition: all 1s ease-in-out .1s;

@@ -9,7 +9,7 @@ const searchResults = document.querySelector(".search-results")
 const showMoreBtn = document.querySelector("#show-more-btn")
 
 
-console.log(searchResults)
+// console.log(searchResults)
 let inputData = ""
 let page = 1;
 // let perPage=10;
@@ -17,16 +17,18 @@ let page = 1;
 async function searchImages(){
 
     inputData = inputSearch.value;
+    // console.log(inputData)
     const url = `https://api.unsplash.com/search/photos/?page=${page}&query=${inputData}&client_id=${key}`
 
     const response = await fetch(url)
     const data = await response.json()
-
+ 
     console.log(data)
     const results = data.results
 
     if (page === 1) {
-        searchResults.innerHTML = ""; // Clear previous results regardless of the page number
+        searchResults.innerHTML = ""; 
+        
     }
     results.map((result)=>{
 
@@ -35,6 +37,8 @@ async function searchImages(){
         //     <img src=${result.urls.small} alt=${result.alt_description}>
         //     <h4><a href=${result.links.html} target="_blank">${result.alt_description}</a></h4>
         // </div>`
+      
+        
         const imageWrapper= document.createElement('div')
         imageWrapper.classList.add("col")
         const image = document.createElement('img')
@@ -47,10 +51,12 @@ async function searchImages(){
 
                 imageWrapper.appendChild(image)
                 imageWrapper.appendChild(imageLink)
-                searchResult.appendChild(imageWrapper)
-                searchResults.appendChild(searchResult)
+                searchResults.appendChild(imageWrapper)
+              
+            
 
     })
+
     page++
     if(page>1){
         showMoreBtn.style.display="block"
@@ -59,14 +65,18 @@ async function searchImages(){
 
 form.addEventListener('submit',(e)=>{
     
-        e.preventDefault()
-        page=1
-        searchImages()
+    e.preventDefault()
+    page=1
+    searchImages()
+        inputSearch.value=""
         
+      
+    
         
-})
-showMoreBtn.addEventListener('click',(e)=>{
-   
+    })
+    showMoreBtn.addEventListener('click',(e)=>{
+        
+      
         
         searchImages()
         
