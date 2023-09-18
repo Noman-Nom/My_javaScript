@@ -1,0 +1,112 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,200;1,300;1,400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+body{
+    line-height: 1.6;
+
+}
+h1{
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin: 40px 0 60px 0;
+}
+form{
+    width: 100% ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #edeef0;
+    border-radius: 30px;
+    max-width: 500px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+    position: relative;
+    transform: translate(-50%,-50%);
+    top: 10%;
+    left: 50%;
+
+    
+}
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding:10px ;
+
+}
+button{
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background:#ff5945;
+    color:#fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+
+}
+.search-results{
+    max-width: 1000px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+
+}
+.search-result{
+    display: flex;
+    flex-wrap: wrap;
+
+    align-items: center;
+    justify-content: space-around;
+}
+
+.col {
+    flex-basis: 25%;
+    min-width: 270px;
+    padding: 10px;
+    margin-bottom: 50px;
+    transition: all 1s ease-in-out .1s;
+    
+}
+
+.col:hover{
+    scale: 1.1;
+    /* width: 300px; */
+}
+
+
+.col img {
+    width: 100%;
+}
+.search-result h4{
+    font-size: 20px;
+    
+    display: block;
+    padding: 10px;
+    text-transform: capitalize;
+ 
+}
+.search-result h4 a{
+    text-decoration: none;
+    color: #ff5945;
+}
+#show-more-btn{
+    display: none;
+    position: relative;
+   left: 45%;
+    
+   
+
+}
+
+
