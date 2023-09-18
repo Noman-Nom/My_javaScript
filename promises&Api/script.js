@@ -99,12 +99,27 @@ const  promise6 = new Promise((resolve,reject)=>{
         async function comsumePrmise6(){
             try {
                 const response = await promise6
-                console.log(response)
+                // console.log(response)
                 
             } catch (error) {
-                console.log(error)
+                // console.log(error)
             }
         }
         comsumePrmise6()
 
-        
+        //  with Api
+
+
+
+        const getUser = async ()=>{
+           const  response = await fetch("https://newsapi.org/v2/everything?q=tesla&from=2023-08-18&sortBy=publishedAt&apiKey=bcd2aeba084a4b89b74f151b9d2bd920")
+            const data = await response.json()
+            console.log(data)
+            console.log(data.articles)
+
+        }
+
+        getUser()
+
+
+
