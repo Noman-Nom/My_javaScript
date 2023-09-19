@@ -13,6 +13,12 @@ h1{
     text-align: center;
     margin: 40px 0 60px 0;
 }
+h1 span{
+    color: #b73b19;
+}
+.container{
+    min-height: calc(100vh-30px);
+}
 .search-box{
         width: 100%;
         display: flex;
@@ -36,6 +42,8 @@ border: none;
 outline: none;
 background: transparent;
 padding: 20px;
+font-size: 18px;
+color:rgb(74, 73, 73) ;
 }
 input::placeholder{
     font-size: 18px;
@@ -51,4 +59,44 @@ button{
     font-size: 18px;
     border-radius: 40px;
     
+}
+
+.smalContainer{
+    max-width: 1000px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+
+}
+.row{
+    display: flex;
+    flex-wrap:wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+.col{
+    flex-basis: 25%;
+    min-width: 200px;
+    padding: 10px;
+    margin-bottom: 50px;
+
+}
+.col img{
+            width: 100%;
+}
+h4{
+    font-size: 22px;
+    color: #b73b19;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+h2 {
+    font-size: 35px;
+    font-weight: bold;
+    color:#b73b19;
+    text-align: center;
+    margin-bottom: 30px;
 }
