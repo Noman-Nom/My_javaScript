@@ -38,6 +38,9 @@ const getData= async()=>{
 
                 });
             }
+            else{
+              row.innerHTML=`<h2>No Result Found</h2>`
+            }
 
 
 
