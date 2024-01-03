@@ -1,0 +1,69 @@
+.containerIcons{
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    align-items: flex-start;
+    gap: 0px;
+	/* border: 1px solid red; */
+	
+
+  }
+ .icons{
+    width:80px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	margin-top: 22px;
+    gap: 2px;
+    margin-bottom: 22px;
+	/* border: 1px solid white; */
+ }
+ .icons label{
+    display: flex;
+    flex-direction:column;
+    gap: 2px;
+    justify-content: center;
+    text-align: center;
+    color: white;
+	font-size: 10px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+ }
+ .icons label i{
+    color: white;
+    font-size: 12px;
+
+ }
+
+
+    <div class="containerIcons">
+              <div class="icons">
+
+                <label for="pdf">
+                  <i class="fa fa-file" aria-hidden="true"></i>
+                  Upload Pdf</label>
+                <input type="file" id="pdf" style="display: none;">
+
+              </div>
+              <div class="icons">
+
+                <label for="img">
+                  <i class="fa fa-picture-o" aria-hidden="true"></i>
+                  Upload Img</label>
+                <input type="file" id="img" style="display: none;">
+
+              </div>
+              <div class="icons">
+
+                <label for="audio">
+                  <i class="fa fa-microphone" aria-hidden="true"></i>
+                  Audio</label>
+                <input type="file" id="audio" style="display: none;">
+
+              </div>
+
+
+
+            </div>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
